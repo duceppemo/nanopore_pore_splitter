@@ -183,7 +183,7 @@ if __name__ == '__main__':
     parser.add_argument('-p', '--parallel', metavar='{}'.format(max_cpu),
                         required=False, type=int, default=max_cpu,
                         help='Number of samples to process in parallel. Default 4.')
-    parser.add_argument('-r', '--range', metavar='"0-256',
+    parser.add_argument('-r', '--range', metavar='0-256',
                         required=True, type=str,
                         help='Pore range to keep. Range between 0-512')
 
