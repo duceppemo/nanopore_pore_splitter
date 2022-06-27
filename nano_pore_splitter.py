@@ -43,6 +43,7 @@ class FastqParser(object):
                 channel = int(channel)
                 if channel in range(range_start, range_stop + 1):
                     fastq_dict[seq_id] = lines
+                lines = list()  # prepare for next sequence in chunk
         return fastq_dict
 
     @staticmethod
